@@ -63,3 +63,23 @@ if ! junod keys show validator $KEYRING; then
   # (echo "$PASSWORD"; echo "$PASSWORD"; echo "$PASSWORD") | junod gentx validator "250000000$STAKE" --chain-id="$CHAIN_ID"
   junod collect-gentxs
 fi
+
+# add default indexer config if doesn't exist
+INDEXER_CONFIG="$HOME"/.juno/indexer/config.json
+if [ -f "$INDEXER_CONFIG" ]; then
+  echo "$INDEXER_CONFIG exists..."
+else
+  echo "$INDEXER_CONFIG does not exist. Generating..."
+
+  mkdir -p "$HOME"/.juno/indexer
+
+  cat <<EOF > "$INDEXER_CONFIG"
+{
+  "filters": [
+    {
+      "output": "out.txt"
+    }
+  ]
+}
+EOF
+fi
