@@ -126,6 +126,8 @@ require (
 )
 
 replace (
+	github.com/CosmWasm/wasmd => ../wasmd
+
 	github.com/CosmWasm/wasmvm => github.com/CosmWasm/wasmvm v1.0.0
 	github.com/confio/ics23/go => github.com/cosmos/cosmos-sdk/ics23/go v0.8.0
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
