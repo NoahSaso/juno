@@ -159,6 +159,9 @@ require (
 )
 
 replace (
+	// INDEXER.
+	github.com/CosmWasm/wasmd => ../wasmd
+
 	// cosmos keyring
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.2.0
 	// token factory:
