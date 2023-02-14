@@ -130,6 +130,6 @@ replace (
 
 // INDEXER
 replace (
-	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v1.0.0-juno3-notional-labs
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v1.0.0-juno3-notional-labs-indexer
 	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.44.5-indexer
 )
