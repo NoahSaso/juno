@@ -125,3 +125,6 @@ replace github.com/tendermint/tendermint => github.com/tendermint/tendermint v0.
 replace github.com/tendermint/spm => github.com/faddat/spm v0.44.1
 
 replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
+
+// INDEXER
+replace github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.44.0-indexer
