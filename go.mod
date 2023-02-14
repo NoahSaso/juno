@@ -127,10 +127,10 @@ require (
 )
 
 replace (
-	github.com/CosmWasm/wasmd => ../wasmd
-
 	// use cosmos protocol buffers
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// use grpc compatible with cosmos protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
+
+replace github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.29.2-indexer
