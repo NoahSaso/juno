@@ -124,10 +124,14 @@ require (
 )
 
 replace (
-	github.com/CosmWasm/wasmd => ../wasmd
-
 	github.com/CosmWasm/wasmvm => github.com/CosmWasm/wasmvm v1.0.0
 	github.com/cosmos/iavl => github.com/cosmos/iavl v0.17.3
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+)
+
+// INDEXER
+replace (
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.28.0-indexer
+	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.6-indexer
 )
