@@ -23,8 +23,6 @@ jobs:
           go-version: 1.19
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Create indexer config
-        run: 'mkdir -p /home/runner/.simapp/indexer && echo "{}" > /home/runner/.simapp/indexer/config.json'
       - name: Test
         run: go test ./...
 
