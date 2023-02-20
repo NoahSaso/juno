@@ -24,7 +24,7 @@ require (
 
 // Patches invariance exploit with wasmd governance
 // https://github.com/CosmosContracts/wasmd/tree/bv0.29.2-patch
-replace github.com/CosmWasm/wasmd => github.com/CosmosContracts/wasmd v0.29.2-patch.1
+// replace github.com/CosmWasm/wasmd => github.com/CosmosContracts/wasmd v0.29.2-patch.1
 
 require (
 	filippo.io/edwards25519 v1.0.0-beta.2 // indirect
@@ -135,4 +135,10 @@ replace (
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	// use grpc compatible with cosmos protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+)
+
+// INDEXER
+replace (
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer
+	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.12-indexer
 )
