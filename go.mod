@@ -178,7 +178,7 @@ replace (
 	// token factory:
 	github.com/CosmWasm/token-factory => github.com/CosmosContracts/token-factory v0.0.0-20230226045138-fb4138453558
 	// governance patch
-	github.com/CosmWasm/wasmd => github.com/CosmosContracts/wasmd v0.30.0-patch.1
+	// github.com/CosmWasm/wasmd => github.com/CosmosContracts/wasmd v0.30.0-patch.1
 	// dgrijalva/jwt-go is deprecated and doesn't receive security updates.
 	// TODO: remove it: https://github.com/cosmos/cosmos-sdk/issues/13134
 	github.com/dgrijalva/jwt-go => github.com/golang-jwt/jwt/v4 v4.4.2
@@ -191,4 +191,10 @@ replace (
 	github.com/tendermint/tendermint => github.com/informalsystems/tendermint v0.34.26
 	// use grpc version that's compatible with cosmos-flavored protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+)
+
+// INDEXER
+replace (
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer
+	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.14-indexer
 )
