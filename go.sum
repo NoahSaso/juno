@@ -66,10 +66,10 @@ github.com/DataDog/zstd v1.4.1/go.mod h1:1jcaCB/ufaK+sKp1NBhlGmpz41jOoPQ35bpF36t
 github.com/DataDog/zstd v1.4.5/go.mod h1:1jcaCB/ufaK+sKp1NBhlGmpz41jOoPQ35bpF36t7BBo=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
-github.com/NoahSaso/cosmos-sdk v0.45.12-indexer h1:nLQeFzKSDryp0dBjX6UGuhsbFmtbJPV6bCNy2aBcJAY=
-github.com/NoahSaso/cosmos-sdk v0.45.12-indexer/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
-github.com/NoahSaso/wasmd v0.29.2-indexer h1:knku5TdsZJZA7caufHLgrM81BTPjTqYoe2oC/ISqKdY=
-github.com/NoahSaso/wasmd v0.29.2-indexer/go.mod h1:FN7HxG8k0ytDKUOPsglNgj5lqiI6dtvEBUMtNkCD6Gw=
+github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3 h1:HGw6EfDj6dueHbtTQEJ8dvYQyACxjVMPbU/6EquoyRs=
+github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
+github.com/NoahSaso/wasmd v0.29.2-indexer.3 h1:w9eSlZ31OZXONLxJ0SXdyXjPuzm/gcBUxaSKqUb/4bU=
+github.com/NoahSaso/wasmd v0.29.2-indexer.3/go.mod h1:7ZTC47EVWunOkrC7sdGWa9freZi6Toe56ryMl+vZ7C8=
 github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
