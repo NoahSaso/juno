@@ -1,0 +1,59 @@
+diff --git a/app/keepers/keepers.go b/app/keepers/keepers.go
+index 431dfea..e21103a 100644
+--- a/app/keepers/keepers.go
++++ b/app/keepers/keepers.go
+@@ -200,6 +200,7 @@ func NewAppKeepers(
+ 		appKeepers.AccountKeeper,
+ 		appKeepers.BankKeeper,
+ 		appKeepers.GetSubspace(stakingtypes.ModuleName),
++		homePath,
+ 	)
+ 	appKeepers.MintKeeper = mintkeeper.NewKeeper(
+ 		appCodec,
+diff --git a/go.mod b/go.mod
+index fab9924..3598e06 100644
+--- a/go.mod
++++ b/go.mod
+@@ -175,3 +175,9 @@ replace (
+ 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+ 
+ )
++
++// INDEXER
++replace (
++	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-indexer.3
++	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3
++)
+diff --git a/go.sum b/go.sum
+index fb084a4..d06b439 100644
+--- a/go.sum
++++ b/go.sum
+@@ -54,8 +54,6 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
+ github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
+ github.com/ChainSafe/go-schnorrkel v0.0.0-20200405005733-88cbf1b4c40d h1:nalkkPQcITbvhmL4+C4cKA87NW0tfm3Kl9VXRoPywFg=
+ github.com/ChainSafe/go-schnorrkel v0.0.0-20200405005733-88cbf1b4c40d/go.mod h1:URdX5+vg25ts3aCh8H5IFZybJYKWhJHYMTnf+ULtoC4=
+-github.com/CosmWasm/wasmd v0.30.0 h1:oUVz3TgO/+24JZQdoTOlOv+IK7N9hEa/s3M4eR9i4FQ=
+-github.com/CosmWasm/wasmd v0.30.0/go.mod h1:umLGeYyowAMMEdOYfDOf8jsDrQ75Qkm1+ogBXT/w01c=
+ github.com/CosmWasm/wasmvm v1.1.1 h1:0xtdrmmsP9fibe+x42WcMkp5aQ738BICgcH3FNVLzm4=
+ github.com/CosmWasm/wasmvm v1.1.1/go.mod h1:ei0xpvomwSdONsxDuONzV7bL1jSET1M8brEx0FCXc+A=
+ github.com/CosmosContracts/token-factory v0.0.0-20230206185803-325635b64f24 h1:WDDfYY2ixHSTSaoEIPVwXpQ7dHqOXGVObqgJBav2WOo=
+@@ -66,6 +64,10 @@ github.com/DataDog/zstd v1.5.0/go.mod h1:g4AWEaM3yOg3HYfnJ3YIawPnVdXJh9QME85blwS
+ github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
+ github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
+ github.com/Microsoft/go-winio v0.6.0/go.mod h1:cTAf44im0RAYeL23bpB+fzCyDH2MJiz2BO69KH/soAE=
++github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3 h1:HGw6EfDj6dueHbtTQEJ8dvYQyACxjVMPbU/6EquoyRs=
++github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
++github.com/NoahSaso/wasmd v0.30.0-indexer.3 h1:dXgNsYE/8WjlpS9/I/qHw8dIjfCS+TWlkl8LdYXfZ9E=
++github.com/NoahSaso/wasmd v0.30.0-indexer.3/go.mod h1:nw9T3neunoGIEFHMZ/QYBc5cOdgpfhqiAKNXT4Dl/wc=
+ github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
+ github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5/go.mod h1:lmUJ/7eu/Q8D7ML55dXQrVaamCz2vxCfdQBasLZfHKk=
+ github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
+@@ -197,8 +199,6 @@ github.com/cosmos/btcutil v1.0.5 h1:t+ZFcX77LpKtDBhjucvnOH8C2l2ioGsBNEQ3jef8xFk=
+ github.com/cosmos/btcutil v1.0.5/go.mod h1:IyB7iuqZMJlthe2tkIFL33xPyzbFYP0XVdS8P5lUPis=
+ github.com/cosmos/cosmos-proto v1.0.0-beta.1 h1:iDL5qh++NoXxG8hSy93FdYJut4XfgbShIocllGaXx/0=
+ github.com/cosmos/cosmos-proto v1.0.0-beta.1/go.mod h1:8k2GNZghi5sDRFw/scPL8gMSowT1vDA+5ouxL8GjaUE=
+-github.com/cosmos/cosmos-sdk v0.45.12 h1:Z0kOOjOfHP+loO42KZZo3Y+PAZsoYycyiSckVXzwOm4=
+-github.com/cosmos/cosmos-sdk v0.45.12/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
+ github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d/go.mod h1:tSxLoYXyBmiFeKpvmq4dzayMdCjCnu8uqmCysIGBT2Y=
+ github.com/cosmos/go-bip39 v1.0.0 h1:pcomnQdrdH22njcAatO0yWojsUnCO3y2tNoV1cb6hHY=
+ github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
