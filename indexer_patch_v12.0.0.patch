@@ -12,7 +12,7 @@ index f88b252..5ed749b 100644
  	app.MintKeeper = mintkeeper.NewKeeper(
  		appCodec, keys[minttypes.StoreKey], app.GetSubspace(minttypes.ModuleName), &stakingKeeper,
 diff --git a/go.mod b/go.mod
-index 6b4fa48..8c45a2f 100644
+index 6b4fa48..9348993 100644
 --- a/go.mod
 +++ b/go.mod
 @@ -24,7 +24,7 @@ require (
@@ -31,11 +31,11 @@ index 6b4fa48..8c45a2f 100644
 +
 +// INDEXER
 +replace (
-+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.3
++	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.4
 +	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3
 +)
 diff --git a/go.sum b/go.sum
-index 45c32de..6e5970a 100644
+index 45c32de..8eb5785 100644
 --- a/go.sum
 +++ b/go.sum
 @@ -61,13 +61,15 @@ github.com/ChainSafe/go-schnorrkel v0.0.0-20200405005733-88cbf1b4c40d h1:nalkkPQ
@@ -51,8 +51,8 @@ index 45c32de..6e5970a 100644
  github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
 +github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3 h1:HGw6EfDj6dueHbtTQEJ8dvYQyACxjVMPbU/6EquoyRs=
 +github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
-+github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.3 h1:bRdw14xTRgiQPk6Q/2V5x5By8ozIO+9gQsG58+15jj8=
-+github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.3/go.mod h1:7ZTC47EVWunOkrC7sdGWa9freZi6Toe56ryMl+vZ7C8=
++github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.4 h1:FdiWg8dzhr1gbn3Xr/IBDoEzGfa23eehFV13KpO3JMk=
++github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.4/go.mod h1:7ZTC47EVWunOkrC7sdGWa9freZi6Toe56ryMl+vZ7C8=
  github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
  github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
  github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=

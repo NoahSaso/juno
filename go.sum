@@ -68,8 +68,8 @@ github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go
 github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
 github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3 h1:HGw6EfDj6dueHbtTQEJ8dvYQyACxjVMPbU/6EquoyRs=
 github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
-github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.3 h1:bRdw14xTRgiQPk6Q/2V5x5By8ozIO+9gQsG58+15jj8=
-github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.3/go.mod h1:7ZTC47EVWunOkrC7sdGWa9freZi6Toe56ryMl+vZ7C8=
+github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.4 h1:FdiWg8dzhr1gbn3Xr/IBDoEzGfa23eehFV13KpO3JMk=
+github.com/NoahSaso/wasmd v0.29.2-patch.1-cosmoscontracts-indexer.4/go.mod h1:7ZTC47EVWunOkrC7sdGWa9freZi6Toe56ryMl+vZ7C8=
 github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
