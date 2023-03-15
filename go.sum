@@ -114,10 +114,10 @@ github.com/Microsoft/go-winio v0.4.14/go.mod h1:qXqCSQ3Xa7+6tgxaGTIe4Kpcdsi+P8jB
 github.com/Microsoft/go-winio v0.5.0/go.mod h1:JPGBdM1cNvN/6ISo+n8V5iA4v8pBzdOpzfwIujj1a84=
 github.com/Microsoft/go-winio v0.5.2 h1:a9IhgEQBCUEk6QCdml9CiJGhAws+YwffDHEMp1VMrpA=
 github.com/Microsoft/go-winio v0.5.2/go.mod h1:WpS1mjBmmwHBEWmogvA2mj8546UReBk4v8QkMxJ6pZY=
-github.com/NoahSaso/cosmos-sdk v0.45.6-indexer h1:YWRQKJcmCHjU8x28VmZhqilEnIfb0yVIuXxRkzHKPGI=
-github.com/NoahSaso/cosmos-sdk v0.45.6-indexer/go.mod h1:bPeeVMEtVvH3y3xAGHVbK+/CZlpaazzh77hG8ZrcJpI=
-github.com/NoahSaso/wasmd v0.28.0-indexer h1:QLG7QHc+OUOxupR7GlpYaLVwrN7BXYv4UpPM8qMWNk8=
-github.com/NoahSaso/wasmd v0.28.0-indexer/go.mod h1:h0fkRkbttAR1kRVtu0Gon3wYZuiHZB+mtj2RO+hVkig=
+github.com/NoahSaso/cosmos-sdk v0.45.6-indexer.3 h1:e0y6vlmFJFs0H7CNvA/ZPGby/WE+PT+EBQUqWJIa4hs=
+github.com/NoahSaso/cosmos-sdk v0.45.6-indexer.3/go.mod h1:bPeeVMEtVvH3y3xAGHVbK+/CZlpaazzh77hG8ZrcJpI=
+github.com/NoahSaso/wasmd v0.28.0-indexer.4 h1:WXqJ3sSfcdo16w27iYyJLPqfBOypK8DElABiZUjZcJI=
+github.com/NoahSaso/wasmd v0.28.0-indexer.4/go.mod h1:NAXEXmiPkVdGE1EmdZ1BjZMD72q6k30j9GljzED/NU0=
 github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
 github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5/go.mod h1:lmUJ/7eu/Q8D7ML55dXQrVaamCz2vxCfdQBasLZfHKk=
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
