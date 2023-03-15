@@ -178,6 +178,6 @@ replace (
 
 // INDEXER
 replace (
-	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-indexer.3
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-indexer.4
 	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3
 )

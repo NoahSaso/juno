@@ -11,7 +11,7 @@ index 431dfea..e21103a 100644
  	appKeepers.MintKeeper = mintkeeper.NewKeeper(
  		appCodec,
 diff --git a/go.mod b/go.mod
-index fab9924..3598e06 100644
+index fab9924..45ef96e 100644
 --- a/go.mod
 +++ b/go.mod
 @@ -175,3 +175,9 @@ replace (
@@ -21,11 +21,11 @@ index fab9924..3598e06 100644
 +
 +// INDEXER
 +replace (
-+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-indexer.3
++	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-indexer.4
 +	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3
 +)
 diff --git a/go.sum b/go.sum
-index fb084a4..d06b439 100644
+index fb084a4..910382e 100644
 --- a/go.sum
 +++ b/go.sum
 @@ -54,8 +54,6 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
@@ -43,8 +43,8 @@ index fb084a4..d06b439 100644
  github.com/Microsoft/go-winio v0.6.0/go.mod h1:cTAf44im0RAYeL23bpB+fzCyDH2MJiz2BO69KH/soAE=
 +github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3 h1:HGw6EfDj6dueHbtTQEJ8dvYQyACxjVMPbU/6EquoyRs=
 +github.com/NoahSaso/cosmos-sdk v0.45.12-indexer.3/go.mod h1:ZAdIs09zttoA3aSwQCTK9gecOThUVNnzBSVj3DiS6UY=
-+github.com/NoahSaso/wasmd v0.30.0-indexer.3 h1:dXgNsYE/8WjlpS9/I/qHw8dIjfCS+TWlkl8LdYXfZ9E=
-+github.com/NoahSaso/wasmd v0.30.0-indexer.3/go.mod h1:nw9T3neunoGIEFHMZ/QYBc5cOdgpfhqiAKNXT4Dl/wc=
++github.com/NoahSaso/wasmd v0.30.0-indexer.4 h1:8cOBa4OwWO1XTbYm1Kk9rKQU7b8IUUSJNgmuMGKiASg=
++github.com/NoahSaso/wasmd v0.30.0-indexer.4/go.mod h1:nw9T3neunoGIEFHMZ/QYBc5cOdgpfhqiAKNXT4Dl/wc=
  github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
  github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5/go.mod h1:lmUJ/7eu/Q8D7ML55dXQrVaamCz2vxCfdQBasLZfHKk=
  github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
@@ -57,3 +57,6 @@ index fb084a4..d06b439 100644
  github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d/go.mod h1:tSxLoYXyBmiFeKpvmq4dzayMdCjCnu8uqmCysIGBT2Y=
  github.com/cosmos/go-bip39 v1.0.0 h1:pcomnQdrdH22njcAatO0yWojsUnCO3y2tNoV1cb6hHY=
  github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
+diff --git a/indexer_patch_v13.0.0-beta.1.patch b/indexer_patch_v13.0.0-beta.1.patch
+new file mode 100644
+index 0000000..e69de29
