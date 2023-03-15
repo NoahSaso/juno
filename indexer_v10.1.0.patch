@@ -1,3 +1,16 @@
+diff --git a/app/app.go b/app/app.go
+index bcb5a55..84b295c 100644
+--- a/app/app.go
++++ b/app/app.go
+@@ -365,7 +365,7 @@ func New(
+ 		appCodec, keys[banktypes.StoreKey], app.AccountKeeper, app.GetSubspace(banktypes.ModuleName), app.ModuleAccountAddrs(),
+ 	)
+ 	stakingKeeper := stakingkeeper.NewKeeper(
+-		appCodec, keys[stakingtypes.StoreKey], app.AccountKeeper, app.BankKeeper, app.GetSubspace(stakingtypes.ModuleName),
++		appCodec, keys[stakingtypes.StoreKey], app.AccountKeeper, app.BankKeeper, app.GetSubspace(stakingtypes.ModuleName), homePath,
+ 	)
+ 	app.MintKeeper = mintkeeper.NewKeeper(
+ 		appCodec, keys[minttypes.StoreKey], app.GetSubspace(minttypes.ModuleName), &stakingKeeper,
 diff --git a/go.mod b/go.mod
 index 5347cfe..535a395 100644
 --- a/go.mod
