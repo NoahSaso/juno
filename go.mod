@@ -195,6 +195,6 @@ replace (
 
 // INDEXER
 replace (
-	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.6
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7
 	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3
 )
