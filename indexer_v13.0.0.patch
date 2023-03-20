@@ -11,7 +11,7 @@ index 431dfea..e21103a 100644
  	appKeepers.MintKeeper = mintkeeper.NewKeeper(
  		appCodec,
 diff --git a/go.mod b/go.mod
-index a59fcb8..bc018ec 100644
+index a59fcb8..7f7b4ba 100644
 --- a/go.mod
 +++ b/go.mod
 @@ -178,7 +178,7 @@ replace (
@@ -31,10 +31,10 @@ index a59fcb8..bc018ec 100644
 +// INDEXER
 +replace (
 +	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7
-+	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3
++	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.4
 +)
 diff --git a/go.sum b/go.sum
-index 9888681..86636af 100644
+index 9888681..65f5dc3 100644
 --- a/go.sum
 +++ b/go.sum
 @@ -69,8 +69,6 @@ github.com/CosmWasm/wasmvm v1.1.1 h1:0xtdrmmsP9fibe+x42WcMkp5aQ738BICgcH3FNVLzm4
@@ -50,8 +50,8 @@ index 9888681..86636af 100644
  github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
  github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
  github.com/Microsoft/go-winio v0.6.0/go.mod h1:cTAf44im0RAYeL23bpB+fzCyDH2MJiz2BO69KH/soAE=
-+github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3 h1:u3D1OLFjBqJNwPz1RJs42jJ2WCow+5OjoLnHIT3Q3f8=
-+github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3/go.mod h1:bF1fyVbRDvZ922GMByg9opQT26sQwabwYqaYIchwdyw=
++github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.4 h1:0mDIViiZHGkT/x2cUri2ytXHdFfi8Vm9Jouqy6pw23Y=
++github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.4/go.mod h1:bF1fyVbRDvZ922GMByg9opQT26sQwabwYqaYIchwdyw=
 +github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7 h1:REXWp4gEl9rIVh8fPz7yGFOP7NL70ertnWuVPS8CNUo=
 +github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7/go.mod h1:nw9T3neunoGIEFHMZ/QYBc5cOdgpfhqiAKNXT4Dl/wc=
  github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
@@ -68,7 +68,7 @@ index 9888681..86636af 100644
  github.com/cosmos/go-bip39 v1.0.0/go.mod h1:RNJv0H/pOIVgxw6KS7QeX2a0Uo0aKUlfhZ4xuwvCdJw=
 diff --git a/indexer_v13.0.0.patch b/indexer_v13.0.0.patch
 new file mode 100644
-index 0000000..40f4de5
+index 0000000..421b7ac
 --- /dev/null
 +++ b/indexer_v13.0.0.patch
 @@ -0,0 +1,65 @@
@@ -85,7 +85,7 @@ index 0000000..40f4de5
 + 	appKeepers.MintKeeper = mintkeeper.NewKeeper(
 + 		appCodec,
 +diff --git a/go.mod b/go.mod
-+index a59fcb8..bc018ec 100644
++index a59fcb8..7f7b4ba 100644
 +--- a/go.mod
 ++++ b/go.mod
 +@@ -178,7 +178,7 @@ replace (
@@ -105,10 +105,10 @@ index 0000000..40f4de5
 ++// INDEXER
 ++replace (
 ++	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7
-++	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3
+++	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.4
 ++)
 +diff --git a/go.sum b/go.sum
-+index 9888681..86636af 100644
++index 9888681..65f5dc3 100644
 +--- a/go.sum
 ++++ b/go.sum
 +@@ -69,8 +69,6 @@ github.com/CosmWasm/wasmvm v1.1.1 h1:0xtdrmmsP9fibe+x42WcMkp5aQ738BICgcH3FNVLzm4
@@ -124,8 +124,8 @@ index 0000000..40f4de5
 + github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 + github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
 + github.com/Microsoft/go-winio v0.6.0/go.mod h1:cTAf44im0RAYeL23bpB+fzCyDH2MJiz2BO69KH/soAE=
-++github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3 h1:u3D1OLFjBqJNwPz1RJs42jJ2WCow+5OjoLnHIT3Q3f8=
-++github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.3/go.mod h1:bF1fyVbRDvZ922GMByg9opQT26sQwabwYqaYIchwdyw=
+++github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.4 h1:0mDIViiZHGkT/x2cUri2ytXHdFfi8Vm9Jouqy6pw23Y=
+++github.com/NoahSaso/cosmos-sdk v0.45.14-indexer.4/go.mod h1:bF1fyVbRDvZ922GMByg9opQT26sQwabwYqaYIchwdyw=
 ++github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7 h1:REXWp4gEl9rIVh8fPz7yGFOP7NL70ertnWuVPS8CNUo=
 ++github.com/NoahSaso/wasmd v0.30.0-patch.1-cosmoscontracts-indexer.7/go.mod h1:nw9T3neunoGIEFHMZ/QYBc5cOdgpfhqiAKNXT4Dl/wc=
 + github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
