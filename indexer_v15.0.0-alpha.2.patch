@@ -11,7 +11,7 @@ index cd460cb..f667db8 100644
  	appKeepers.MintKeeper = mintkeeper.NewKeeper(
  		appCodec,
 diff --git a/go.mod b/go.mod
-index d4a5cdb..2d0b17e 100644
+index d4a5cdb..7fa2baa 100644
 --- a/go.mod
 +++ b/go.mod
 @@ -176,3 +176,9 @@ replace (
@@ -21,11 +21,11 @@ index d4a5cdb..2d0b17e 100644
 +
 +// INDEXER
 +replace (
-+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.31.0-indexer.7
++	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.31.0-indexer.8
 +	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.16-indexer.4
 +)
 diff --git a/go.sum b/go.sum
-index a15b35a..c1c03bb 100644
+index a15b35a..b3490b5 100644
 --- a/go.sum
 +++ b/go.sum
 @@ -64,8 +64,6 @@ github.com/CloudyKit/fastprinter v0.0.0-20170127035650-74b38d55f37a/go.mod h1:EF
@@ -43,8 +43,8 @@ index a15b35a..c1c03bb 100644
  github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
 +github.com/NoahSaso/cosmos-sdk v0.45.16-indexer.4 h1:IQCPQcxpmgloUzPnZLCGBKTfWAPafIznSKqIUj/xGIo=
 +github.com/NoahSaso/cosmos-sdk v0.45.16-indexer.4/go.mod h1:bScuNwWAP0TZJpUf+SHXRU3xGoUPp+X9nAzfeIXts40=
-+github.com/NoahSaso/wasmd v0.31.0-indexer.7 h1:y2T0n4DaF1I7CnCeoE87YoMptYs/z+ThdsZcaGpcAe8=
-+github.com/NoahSaso/wasmd v0.31.0-indexer.7/go.mod h1:alHywEM2c5uJlqBi6d7gbgOrF3irapQ4KjUeFI+QEos=
++github.com/NoahSaso/wasmd v0.31.0-indexer.8 h1:wKuxWrrgx4h/m2P5dfxadCGWvp5omRD4V1AMVEoan+g=
++github.com/NoahSaso/wasmd v0.31.0-indexer.8/go.mod h1:alHywEM2c5uJlqBi6d7gbgOrF3irapQ4KjUeFI+QEos=
  github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 h1:TngWCqHvy9oXAN6lEVMRuU21PR1EtLVZJmdB18Gu3Rw=
  github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
  github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
