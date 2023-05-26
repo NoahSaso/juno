@@ -176,3 +176,9 @@ replace (
 	// use grpc version that's compatible with cosmos-flavored protocol buffers
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
+
+// INDEXER
+replace (
+	github.com/CosmWasm/wasmd => github.com/NoahSaso/wasmd v0.31.0-indexer.7
+	github.com/cosmos/cosmos-sdk => github.com/NoahSaso/cosmos-sdk v0.45.16-indexer.4
+)
